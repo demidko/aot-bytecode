@@ -1,6 +1,8 @@
 package com.github.demidko.aot;
 
-public final class Utils {
+public final class BytecodeUtils {
+
+  public static final byte endOfCompiledLine = 100;
 
   public static char safeByteToChar(byte b) {
     char c = byteToChar(b);
@@ -346,5 +348,13 @@ public final class Utils {
       default:
         return 0x0;
     }
+  }
+
+  public static boolean isEndl(byte b) {
+    return b == endOfCompiledLine;
+  }
+
+  public static boolean isContent(byte b) {
+    return b != endOfCompiledLine;
   }
 }
