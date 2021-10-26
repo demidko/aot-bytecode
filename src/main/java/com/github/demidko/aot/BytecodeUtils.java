@@ -1,10 +1,10 @@
 package com.github.demidko.aot;
 
-public final class BytecodeUtils {
+final class BytecodeUtils {
 
-  public static final byte endOfCompiledLine = 100;
+  static final byte endOfCompiledLine = 100;
 
-  public static char safeByteToChar(byte b) {
+   static char safeByteToChar(byte b) {
     char c = byteToChar(b);
     if (c == 0) {
       throw new IllegalArgumentException("Invalid byte character: " + b);
@@ -12,7 +12,7 @@ public final class BytecodeUtils {
     return c;
   }
 
-  public static char byteToChar(byte b) {
+  static char byteToChar(byte b) {
     switch (b) {
       case (byte) 0x2d:
         return '-';
@@ -178,7 +178,7 @@ public final class BytecodeUtils {
     }
   }
 
-  public static byte safeCharToByte(char n) {
+  static byte safeCharToByte(char n) {
     byte b = charToByte(n);
     if (b == 0) {
       throw new IllegalArgumentException("Invalid character: " + n);
@@ -186,7 +186,7 @@ public final class BytecodeUtils {
     return b;
   }
 
-  public static byte charToByte(char n) {
+  static byte charToByte(char n) {
     switch (n) {
       case '-':
         return (byte) 0x2d;
@@ -350,11 +350,11 @@ public final class BytecodeUtils {
     }
   }
 
-  public static boolean isEndl(byte b) {
+  static boolean isEndl(byte b) {
     return b == endOfCompiledLine;
   }
 
-  public static boolean isContent(byte b) {
+  static boolean isContent(byte b) {
     return b != endOfCompiledLine;
   }
 }
