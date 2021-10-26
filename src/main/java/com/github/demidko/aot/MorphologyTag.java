@@ -371,7 +371,7 @@ public enum MorphologyTag {
     return token;
   }
 
-  public static MorphologyTag fromString(final String token) {
+  static MorphologyTag fromString(final String token) {
     for (MorphologyTag info : values()) {
       if (info.token.equals(token)) {
         return info;
