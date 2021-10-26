@@ -1,4 +1,4 @@
-package com.github.demidko.aot.bytecode;
+package com.github.demidko.aot;
 
 /**
  * Класс хранит константы байт-кода
