@@ -1,20 +1,14 @@
-# Library
+# Aot Bytecode
 
-Java library template written in the Kotlin language.
+Библиотека стандартизирует общий формат байт-кода для aot компилятора и словаря.
 
 ## Download
 
 You need Gradle, or Maven, or other build tool.
 
-[![](https://jitpack.io/v/demidko/library.svg)](https://jitpack.io/#demidko/library)
+[![](https://jitpack.io/v/demidko/aot-bytecode.svg)](https://jitpack.io/#demidko/aot-bytecode)
 
-See also [JitPack documentation](https://jitpack.io/docs/#publishing-on-jitpack).
 
-## Usage
-
-```kotlin
-usage.example.placeholder()
-```
 
 
 
