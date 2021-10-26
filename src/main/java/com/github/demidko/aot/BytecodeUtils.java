@@ -350,7 +350,7 @@ final class BytecodeUtils {
     }
   }
 
-  static boolean isEndl(byte b) {
+  static boolean isEndOfLine(byte b) {
     return b == endOfCompiledLine;
   }
 
