@@ -2,7 +2,7 @@ package com.github.demidko.aot;
 
 final class BytecodeUtils {
 
-  static final byte endOfCompiledLine = 100;
+  private static final byte endOfCompiledLine = 100;
 
    static char safeByteToChar(byte b) {
     char c = byteToChar(b);
