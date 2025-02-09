@@ -1,4 +1,4 @@
-package com.github.demidko.aot;
+package com.github.demidko.aot.morphology;
 
 /**
  * Морфологическая характеристика для слова. Например {@link MorphologyTag#FirstPerson}
