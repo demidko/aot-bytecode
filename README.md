@@ -1,4 +1,4 @@
-# aot Bytecode
+# aot-bytecode
 
 The library standardizes the bytecode format and shared entities for the
 aot [dictionary](https://github.com/demidko/aot) and [compiler](https://github.com/demidko/aot-compiler).
