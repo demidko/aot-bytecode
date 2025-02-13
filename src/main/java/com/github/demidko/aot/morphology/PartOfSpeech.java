@@ -184,7 +184,7 @@ public enum PartOfSpeech {
      * @param tags вся морфологическая информация
      * @return извлеченная часть речи или null
      */
-    static PartOfSpeech partOfSpeech(Iterable<MorphologyTag> tags) {
+    public static PartOfSpeech partOfSpeech(Iterable<MorphologyTag> tags) {
         for (MorphologyTag tag : tags) {
             PartOfSpeech maybe = partOfSpeech(tag);
             if (maybe != null) {
