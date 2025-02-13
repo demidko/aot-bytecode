@@ -1,6 +1,6 @@
 package com.github.demidko.aot.bytecode;
 
-final class BytecodeUtils {
+public final class BytecodeUtils {
 
   private static final byte endOfCompiledLine = 100;
 
