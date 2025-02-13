@@ -1,6 +1,7 @@
-# Aot Bytecode
+# aot Bytecode
 
-Библиотека стандартизирует общий формат байт-кода для aot компилятора и словаря.
+The library standardizes the bytecode format and shared entities for the
+aot [dictionary](https://github.com/demidko/aot) and [compiler](https://github.com/demidko/aot-compiler).
 
 ## Download
 
