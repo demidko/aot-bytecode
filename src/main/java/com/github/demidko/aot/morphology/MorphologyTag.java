@@ -371,12 +371,18 @@ public enum MorphologyTag {
     return token;
   }
 
+  // Built once in declaration order; putIfAbsent preserves first-match semantics.
+  private static final java.util.Map<String, MorphologyTag> byToken;
+
+  static {
+    java.util.Map<String, MorphologyTag> tags = new java.util.HashMap<>();
+    for (MorphologyTag tag : values()) tags.putIfAbsent(tag.token, tag);
+    byToken = java.util.Collections.unmodifiableMap(tags);
+  }
+
   public static MorphologyTag fromString(String token) {
-    for (MorphologyTag info : values()) {
-      if (info.token.equals(token)) {
-        return info;
-      }
-    }
+    MorphologyTag tag = byToken.get(token);
+    if (tag != null) return tag;
     throw new IllegalArgumentException("Invalid token: " + token);
   }
 }
