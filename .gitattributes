@@ -1,0 +1,2 @@
+# JMH output is retained for reproducibility; summarize it in docs/compatibility.md.
+docs/*.json linguist-generated=true
